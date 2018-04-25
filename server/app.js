@@ -5,18 +5,6 @@ const path = require('path')
 var app = express()
 const router = express.Router()
 
-
-// app.use('*', function(req, res, next) {
-    
-//     // res.header("Content-Type", "application/jsoncharset=utf-8")
-//     next()
-// })
-// app.all('*',function (req, res, next) {
-//   res.header('Access-Control-Allow-Origin', 'http://localhost:8080')
-//   res.header('Access-Control-Allow-Headers', 'Content-Type')
-//   res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS')
-// 　next()　
-// })
 function handler(req, res, next) {
     //设置跨域访问
     res.header("Access-Control-Allow-Origin", "http://localhost:8080")
