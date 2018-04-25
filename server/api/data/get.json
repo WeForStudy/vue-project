@@ -1,0 +1,23 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": "2000000",
+      "msg": "成功",
+      "data":{
+        "value": "成功啦"
+      }
+    },
+    "failure": {
+      "code": "201",
+      "status": "FAILURE",
+      "message": "服务异常"
+    }
+  }
+}
