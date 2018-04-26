@@ -2,8 +2,10 @@
   <div id="app" class="flex">
     <div class="nav--wrapper"></div>
     <div class="content--wrapper flex flex--1">
-      <div class="slider--wrapper"></div>
-      <div class="router--wrapper">
+      <div class="slider--wrapper">
+        <Slide />
+      </div>
+      <div class="router--wrapper flex--1">
         <router-view></router-view>
       </div>
     </div>
@@ -11,12 +13,12 @@
 </template>
 
 <script>
-import { getData } from 'service'
+import Slide from 'pages/slider'
+
 export default {
   name: 'App',
-  beforeCreate() {
-    getData({id: 0, name: '213'}).then(res => {
-    })
+  components: {
+    Slide
   }
 }
 </script>
@@ -27,7 +29,6 @@ export default {
     bottom 0
     left 0
     right 0
-    background-color red
     flex-direction column
     .nav--wrapper 
       height 60px
@@ -35,6 +36,4 @@ export default {
     .content--wrapper
       .slider--wrapper
         width 120px
-        background-color lightgreen
-   
 </style>

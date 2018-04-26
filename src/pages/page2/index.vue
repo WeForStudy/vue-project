@@ -5,9 +5,8 @@
 </template>
 
 <script>
-import { getData } from 'service'
 export default {
-  name: 'Page1',
+  name: 'Page2',
 }
 </script>
 <style lang="stylus">
