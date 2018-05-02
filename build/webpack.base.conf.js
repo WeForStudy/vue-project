@@ -31,6 +31,7 @@ module.exports = {
       'helper': path.join(resolve('src'), '/helper'),
       'assets': path.join(resolve('src'), '/assets'),
       'storage': path.join(resolve('src'), '/storage'),
+      'store': path.join(resolve('src'), '/store'),
       'common': path.join(resolve('src'), '/common'),
     }
   },

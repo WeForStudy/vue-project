@@ -1,6 +1,8 @@
 <template>
   <div id="app" class="flex">
-    <div class="nav--wrapper"></div>
+    <div class="nav--wrapper">
+      store's list length is {{$store.getters.listLength}}      
+    </div>
     <div class="content--wrapper flex flex--1">
       <div class="slider--wrapper">
         <Slide />
@@ -31,8 +33,11 @@ export default {
     right 0
     flex-direction column
     .nav--wrapper 
-      height 60px
+      padding 20px 0px
       background-color lightblue
+      font-size 20px
+      text-align center 
+
     .content--wrapper
       .slider--wrapper
         width 120px
