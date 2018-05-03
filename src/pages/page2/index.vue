@@ -7,6 +7,7 @@
 <script>
 export default {
   name: 'Page2',
+  
 }
 </script>
 <style lang="stylus">
