@@ -33,6 +33,7 @@ module.exports = {
       'storage': path.join(resolve('src'), '/storage'),
       'store': path.join(resolve('src'), '/store'),
       'common': path.join(resolve('src'), '/common'),
+      'components': path.join(resolve('src'), '/components'),
     }
   },
   module: {

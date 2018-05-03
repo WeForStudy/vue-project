@@ -16,12 +16,11 @@
 
 <script>
 import Slide from 'pages/slider'
-
 export default {
   name: 'App',
   components: {
-    Slide
-  }
+    Slide,
+  },
 }
 </script>
 <style lang="stylus">
@@ -32,6 +31,7 @@ export default {
     left 0
     right 0
     flex-direction column
+
     .nav--wrapper 
       padding 20px 0px
       background-color lightblue

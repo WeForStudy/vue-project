@@ -1,6 +1,6 @@
 <template>
   <div class="page--wrapper">
-   im page
+   这是一个Vuex的Demo
    <button @click="push">Click me</button>
    <button @click="pop">Pop me</button>
    <ul>
@@ -8,6 +8,7 @@
       {{item}}<button @click="remove({ index })">delete me</button>
      </li>
    </ul>
+   <Modal />       
   </div>
 </template>
 
@@ -15,8 +16,7 @@
 import { mapActions, mapState } from 'vuex'
 export default {
   name: 'Page1',
-  created() {
-  },
+
   methods:{
     ...mapActions([
       'push',
@@ -24,11 +24,13 @@ export default {
       'pop'
     ]),
   },
+
   computed: {
     ...mapState([
       'list'
     ])
-  }
+  },
+
 }
 </script>
 <style lang="stylus">
