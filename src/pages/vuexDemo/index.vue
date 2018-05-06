@@ -8,7 +8,6 @@
       {{item}}<button @click="remove({ index })">delete me</button>
      </li>
    </ul>
-   <Modal />       
   </div>
 </template>
 
@@ -16,7 +15,10 @@
 import { mapActions, mapState } from 'vuex'
 export default {
   name: 'Page1',
-
+  data() {
+    return {
+    }
+  },
   methods:{
     ...mapActions([
       'push',
@@ -31,6 +33,10 @@ export default {
     ])
   },
 
+  created() {
+    // console.log(this.$modal)
+  },
+ 
 }
 </script>
 <style lang="stylus">

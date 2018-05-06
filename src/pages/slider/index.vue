@@ -40,7 +40,6 @@ export default {
     if(index === 0) {
       this.$router.push(this.list[0].route)
     }
-    console.log(this.$route)
   },
 
   methods: {

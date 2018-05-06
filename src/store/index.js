@@ -13,7 +13,6 @@ const store = {
     },
     remove(state, { index }){
       const arr = state.list
-      console.log(index)
       state.list.splice(index, 1)
     },
     pop(state) {
