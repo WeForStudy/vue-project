@@ -9,11 +9,11 @@ import App from './pages/app'
 import routes from './router'
 import 'common/index.styl'
 
-import Modal from 'components/modal'
-
+import Modal from 'components/modal/index'
 Vue.use(Vuex)
 Vue.use(Router)
 Vue.use(Modal)
+
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 const store = new Vuex.Store(myStore)
