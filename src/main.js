@@ -8,8 +8,7 @@ import Router from 'vue-router'
 import App from './pages/app'
 import routes from './router'
 import 'common/index.styl'
-
-import Modal from 'components/modal/index'
+import Modal from 'components/modal'
 Vue.use(Vuex)
 Vue.use(Router)
 Vue.use(Modal)
@@ -23,5 +22,5 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
 })

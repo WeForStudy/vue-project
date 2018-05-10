@@ -1,11 +1,10 @@
 <template>
   <div class="modal--wrapper"  v-show="showModal">
-  
   </div>
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex'
+// import { mapActions, mapState } from 'vuex'
 const modal = {
   name: 'modal',
   data() {
@@ -46,7 +45,7 @@ export default {
     obj.$mount(`#${id}`)
     const toMoal = {
       show() {
-        // modal.methods.show()
+        modal.methods.show()
         // console.log()
         // obj.show()
         // modal.show.call(modal)
@@ -57,16 +56,9 @@ export default {
     }
     Vue.prototype.$modal = toMoal
     return {
-      show() {
-        modal.methods.show()
-      },
-      hide() {
-        obj.hide.call(obj)
-      } 
+      toMoal,
     }
   },
-
-
 }
 </script>
 

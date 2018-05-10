@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="flex">
-    <Modal/>
     <div class="nav--wrapper">
       store's list length is {{$store.getters.listLength}}      
     </div>
