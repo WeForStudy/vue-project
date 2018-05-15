@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="flex">
     <div class="nav--wrapper">
-      store's list length is {{$store.getters.listLength}}      
+      store's list length is {{$store.title}}      
     </div>
     <div class="content--wrapper flex flex--1">
       <div class="slider--wrapper">
